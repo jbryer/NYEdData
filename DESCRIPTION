@@ -1,0 +1,24 @@
+Package: NYEdData
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jason",
+           family = "Bryer",
+           role = c("aut", "cre"),
+           email = "jason.bryer@cuny.edu")
+    person(given = 'Rachel',
+           family = 'Greenlee',
+           role= c('aut', 'cre'),
+           email = 'rachellynn3190@gmail.com')
+Description: Data for schools within New York State.
+License: `use_mit_license()`
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 4.0)
+Imports:
+    tidyverse, reshape2
+Suggests:
+    devtools
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

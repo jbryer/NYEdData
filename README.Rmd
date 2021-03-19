@@ -1,0 +1,29 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# NYEdData: Data for schools in New York State
+
+
+
+### Building the package
+
+```{r, eval=FALSE}
+library(devtools)
+
+document()
+install(dependencies = FALSE)
+
+library(NYEdData)
+ls('package:NYEdData')
+data(package = 'NYEdData')
+
+data("districts_enrollment")
+data("schools_enrollment")
+
+# Build data files
+tools::resaveRdaFiles('data/')
+
+```
+
