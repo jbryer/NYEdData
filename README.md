@@ -1,16 +1,9 @@
----
-output: github_document
-editor_options: 
-  chunk_output_type: console
----
 
 # NYEdData: Data for schools in New York State
 
-
-
 ### Building the package
 
-```{r, eval=FALSE}
+``` r
 library(devtools)
 
 document()
@@ -25,6 +18,4 @@ data("schools_enrollment")
 
 # Build data files
 tools::resaveRdaFiles('data/')
-
 ```
-
